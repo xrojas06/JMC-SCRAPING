@@ -53,7 +53,7 @@ def scrape_page_playwright(is_exito = True):
                     page.press('input[id="react-select-2-input"]', 'Enter')
 
                     # Esperar a que aparezca el campo de selección de tienda y escribir "Exito Suba", luego presionar Enter
-                    page.fill('input[id="react-select-3-input"]', 'Éxito Suba')
+                    page.fill('input[id="react-select-3-input"]', 'Éxito Usme')
                     page.press('input[id="react-select-3-input"]', 'Enter')
 
                     # Hacer clic en el botón de confirmar
@@ -104,6 +104,7 @@ def scrape_page_playwright(is_exito = True):
                             #print('href: ',href)
                             #print('paths: ', paths)
                     '''
+
                     while True:
                         path = f"/api/graphql?operationName=ProductsQuery&variables=%7B%22first%22%3A{first}%2C%22after%22%3A%22{after}%22%2C%22sort%22%3A%22score_desc%22%2C%22term%22%3A%22%22%2C%22selectedFacets%22%3A%5B%7B%22key%22%3A%22productClusterIds%22%2C%22value%22%3A%225656%22%7D%2C%7B%22key%22%3A%22channel%22%2C%22value%22%3A%22%7B%5C%22salesChannel%5C%22%3A%5C%221%5C%22%2C%5C%22regionId%5C%22%3A%5C%22U1cjZXhpdG9jb2w7ZXhpdG9jb2wwNDE%3D%5C%22%7D%22%7D%2C%7B%22key%22%3A%22locale%22%2C%22value%22%3A%22es-CO%22%7D%5D%7D"
                         path = f"/api/graphql?operationName=ProductsQuery&variables=%7B%22first%22%3A{first}%2C%22after%22%3A%22{after}%22%2C%22sort%22%3A%22score_desc%22%2C%22term%22%3A%22%22%2C%22selectedFacets%22%3A%5B%7B%22key%22%3A%22channel%22%2C%22value%22%3A%22%7B%5C%22salesChannel%5C%22%3A%5C%221%5C%22%2C%5C%22regionId%5C%22%3A%5C%22U1cjZXhpdG9jb2w7ZXhpdG9jb2wwOTM%3D%5C%22%7D%22%7D%2C%7B%22key%22%3A%22locale%22%2C%22value%22%3A%22es-CO%22%7D%5D%7D"
