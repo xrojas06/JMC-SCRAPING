@@ -83,7 +83,7 @@ paths_and_filenames = [
     "Cali Valle De Lili"),
     ("/api/graphql?operationName=ProductsQuery&variables=%7B%22first%22%3A{0}%2C%22after%22%3A%22{1}%22%2C%22sort%22%3A%22orders_desc%22%2C%22term%22%3A%22%22%2C%22selectedFacets%22%3A%5B%7B%22key%22%3A%22productClusterIds%22%2C%22value%22%3A%225656%22%7D%2C%7B%22key%22%3A%22channel%22%2C%22value%22%3A%22%7B%5C%22salesChannel%5C%22%3A%5C%221%5C%22%2C%5C%22regionId%5C%22%3A%5C%22U1cjZXhpdG9jb2w7ZXhpdG9jb2wwMzc%3D%5C%22%7D%22%7D%2C%7B%22key%22%3A%22locale%22%2C%22value%22%3A%22es-CO%22%7D%5D%7D",
     "Medellin Laureles"),
-    ("/api/graphql?operationName=ProductsQuery&variables=%7B%22first%22%3A{0}%2C%22after%22%3A%22{1}%22%2C%22sort%22%3A%22score_desc%22%2C%22term%22%3A%22%22%2C%22selectedFacets%22%3A%5B%7B%22key%22%3A%22productClusterIds%22%2C%22value%22%3A%225656%22%7D%2C%7B%22key%22%3A%22channel%22%2C%22value%22%3A%22%7B%5C%22salesChannel%5C%22%3A%5C%221%5C%22%2C%5C%22regionId%5C%22%3A%5C%22U1cjZXhpdG9jb2w7ZXhpdG9jb2wwMzA%3D%5C%22%7D%22%7D%2C%7B%22key%22%3A%22locale%22%2C%22value%22%3A%22es-CO%22%7D%5D%7D",
+    ("/api/gra0hql?operationName=ProductsQuery&variables=%7B%22first%22%3A{0}%2C%22after%22%3A%22{1}%22%2C%22sort%22%3A%22score_desc%22%2C%22term%22%3A%22%22%2C%22selectedFacets%22%3A%5B%7B%22key%22%3A%22productClusterIds%22%2C%22value%22%3A%225656%22%7D%2C%7B%22key%22%3A%22channel%22%2C%22value%22%3A%22%7B%5C%22salesChannel%5C%22%3A%5C%221%5C%22%2C%5C%22regionId%5C%22%3A%5C%22U1cjZXhpdG9jb2w7ZXhpdG9jb2wwMzA%3D%5C%22%7D%22%7D%2C%7B%22key%22%3A%22locale%22%2C%22value%22%3A%22es-CO%22%7D%5D%7D",
     "Bello"),
     ("/api/graphql?operationName=ProductsQuery&variables=%7B%22first%22%3A{0}%2C%22after%22%3A%22{1}%22%2C%22sort%22%3A%22score_desc%22%2C%22term%22%3A%22%22%2C%22selectedFacets%22%3A%5B%7B%22key%22%3A%22productClusterIds%22%2C%22value%22%3A%225656%22%7D%2C%7B%22key%22%3A%22channel%22%2C%22value%22%3A%22%7B%5C%22salesChannel%5C%22%3A%5C%221%5C%22%2C%5C%22regionId%5C%22%3A%5C%22U1cjZXhpdG9jb2w7ZXhpdG9jb2wzNTc%3D%5C%22%7D%22%7D%2C%7B%22key%22%3A%22locale%22%2C%22value%22%3A%22es-CO%22%7D%5D%7D",
     "Monteria Alamedas Del Sinu"),
@@ -93,7 +93,7 @@ paths_and_filenames = [
 
 
 
-with pd.ExcelWriter('exito_insuperables_1204.xlsx') as writer:
+with pd.ExcelWriter('exito_insuperables_1304.xlsx') as writer:
     for path,file in paths_and_filenames:
         print(file)
         df = scrape_page_playwright_and_save_sheet(path,'exito_insuperables_1204.xlsx')
