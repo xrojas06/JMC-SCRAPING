@@ -1,0 +1,21 @@
+{
+    "hideUnavailableItems": true,
+    "skusFilter": "ALL_AVAILABLE",
+    "simulationBehavior": "default",
+    "installmentCriteria": "MAX_WITHOUT_INTEREST",
+    "productOriginVtex": false,
+    "map": "productClusterIds",
+    "query": "7728",
+    "orderBy": "OrderByScoreDESC",
+    "from": 0,
+    "to": 19,
+    "selectedFacets": [
+        {
+            "key": "productClusterIds",
+            "value": "7728"
+        }
+    ],
+    "facetsBehavior": "Static",
+    "withFacets": false,
+    "showSponsored": true
+}

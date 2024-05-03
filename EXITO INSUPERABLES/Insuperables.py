@@ -93,8 +93,8 @@ paths_and_filenames = [
 
 
 
-with pd.ExcelWriter('exito_insuperables_2104.xlsx') as writer:
+with pd.ExcelWriter('exito_insuperables_2204.xlsx') as writer:
     for path,file in paths_and_filenames:
         print(file)
-        df = scrape_page_playwright_and_save_sheet(path,'exito_insuperables_2104.xlsx')
+        df = scrape_page_playwright_and_save_sheet(path, 'exito_insuperables_2204.xlsx')
         df.to_excel(writer, sheet_name=f'{file}', index=False)
