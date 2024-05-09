@@ -1,24 +1,107 @@
 {
-    "precios insuperables": "7728",
-    "vinos y licores": "vinos-y-licores",
-    "delicatessen": "delicatessen",
-    "despensa": "despensa",
-    "frutas y verduras": "frutas-y-verduras",
-    "lacteos": "lacteos-huevos-y-refrigerados",
-    "panaderia": "panaderia",
-    "vida sana": "9826",
-    "bebidas": "bebidas-pasabocas-y-dulces",
-    "pollo y carnes": "pollo-carnes-y-pescado",
-    "comida congelada": "10398",
-    "limpieza": "limpieza-del-hogar",
-    "salud y belleza": "salud-y-belleza",
-    "electrodomesticos": "electrodomesticos",
-    "hogar y decoracion": "hogar-y-decoracion",
-    "tecnologia": "tecnologia",
-    "moda": "11658",
-    "mascotas": "mascotas",
-    "deportes": "deportes-y-tiempo-libre",
-    "ferreteria": "vehiculos-y-ferreteria",
-    "bebes": "273",
-    "libros": "libros"
+    "precios insuperables": {
+        "value": "7728",
+        "map": "productClusterIds",
+        "Tree": 1
+    },
+    "vinos y licores": {
+        "value": "vinos-y-licores",
+        "map": "c",
+        "Tree": 1
+    },
+    "delicatessen": {
+        "value": "delicatessen",
+        "map": "c",
+        "Tree": 1
+    },
+    "despensa": {
+        "value": "despensa",
+        "map": "c",
+        "Tree": 1
+    },
+    "frutas y verduras": {
+        "value": "frutas-y-verduras",
+        "map": "c",
+        "Tree": 1
+    },
+    "lacteos": {
+        "value": "lacteos-huevos-y-refrigerados",
+        "map": "c",
+        "Tree": 1
+    },
+    "panaderia": {
+        "value": "panaderia",
+        "map": "c",
+        "Tree": 1
+    },
+    "vida sana": {
+        "value": "9826",
+        "map": "productClusterIds",
+        "Tree": 0
+    },
+    "bebidas": {
+        "value": "bebidas-pasabocas-y-dulces",
+        "map": "c",
+        "Tree": 1
+    },
+    "pollo y carnes": {
+        "value": "pollo-carnes-y-pescado",
+        "map": "c",
+        "Tree": 1
+    },
+    "comida congelada": {
+        "value": "10398",
+        "map": "productClusterIds",
+        "Tree": 0
+    },
+    "limpieza": {
+        "value": "limpieza-del-hogar",
+        "map": "c",
+        "Tree": 1
+    },
+    "salud y belleza": {
+        "value": "salud-y-belleza",
+        "map": "c",
+        "Tree": 1
+    },
+    "electrodomesticos": {
+        "value": "electrodomesticos",
+        "map": "c",
+        "Tree": 1
+    },
+    "hogar y decoracion": {
+        "value": "hogar-y-decoracion",
+        "map": "c",
+        "Tree": 1
+    },
+    "tecnologia": {
+        "value": "tecnologia",
+        "map": "c",
+        "Tree": 1
+    },
+    "moda": {
+        "value": "11658",
+        "map": "productClusterIds",
+        "Tree": 1
+    },
+    "mascotas": {
+        "value": "mascotas",
+        "map": "c",
+        "Tree": 1
+    },
+    "ferreteria": {
+        "value": "vehiculos-y-ferreteria",
+        "map": "c",
+        "Tree": 1
+    },
+    "bebes": {
+        "value": "273",
+        "map": "productClusterIds",
+        "Tree": 1
+    },
+    "libros": {
+        "value": "libros",
+        "map": "c",
+        "Tree": 1
+    }
 }

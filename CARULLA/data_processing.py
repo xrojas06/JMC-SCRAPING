@@ -3,14 +3,14 @@ import pandas as pd
 import http.client
 from http_requests import generate_data_request
 
-def scraping_category(category, base_json):
+def scraping_category(category, categories,base_json):
     first = 0
-    after = 19
+    after = 1000
     productos_list = []
 
     while True:
 
-        data_text = generate_data_request(category, base_json, first, after)
+        data_text = generate_data_request(category, categories, base_json, first, after)
 
         if len(data_text) > 1000:
             print("ENTRE")
@@ -38,7 +38,7 @@ def scraping_category(category, base_json):
                     [url, categoria, marca, nombre, precio_sin_descuento, precio_promocional])
 
 
-            first += after + 1
+            after += first
         else:
             print("Sali por error")
             break

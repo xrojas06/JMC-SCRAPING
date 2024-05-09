@@ -3,7 +3,7 @@ import json
 import http.client
 
 
-def generate_data_request(category, base_json, first, after):
+def generate_data_request(category, categories,base_json, first, after):
 
     """
     Genera una solicitud de datos para la categoría especificada utilizando el diccionario base_json como base.
@@ -18,10 +18,21 @@ def generate_data_request(category, base_json, first, after):
 
     # Actualiza el valor de la clave "query" en base_json con la categoría especificada, envuelta en comillas simples
     print("CATEGORIA: ", category)
-    base_json["query"] = category
-    base_json["from"] = int(f"{first}")
-    base_json["to"] = int(f"{after}")
-    base_json["selectedFacets"][0]["value"] = category
+    data = categories[category]
+    base_json["query"] = data['value']
+    base_json["first"] = int(f"{first}")
+    base_json["after"] = int(f"{after}")
+    base_json["selectedFacets"][0]["value"] = data['value']
+    base_json["map"] = data['map']
+    base_json["selectedFacets"][0]["key"] = data['map']
+
+    if data['Tree'] == 0:
+        base_json.pop("categoryTreeBehavior", None)
+    else:
+        # Si 'tree' es 1, agrega "categoryTreeBehavior" si no está presente
+        if "categoryTreeBehavior" not in base_json:
+            base_json["categoryTreeBehavior"] = "default"
+
 
     # Convierte base_json en una cadena JSON comprimida
     cadena_json_nueva = json.dumps(base_json, separators=(',', ':')).encode('utf-8')
